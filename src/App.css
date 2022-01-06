@@ -1,12 +1,9 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
-  height: 100px;;
-  pointer-events: none;
+  height: 50px;;
+ 
 }
-
 
 
 .App-header {
@@ -27,4 +24,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Nav Bar*/ 
+.ml-auto{
+  margin-left: auto;
+  margin-right:100px;
 }
