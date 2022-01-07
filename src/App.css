@@ -6,6 +6,7 @@
 }
 
 
+
 .App-header {
   background-color: #ffff;
   height: 100px;
@@ -17,17 +18,33 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 /* Nav Bar*/ 
 .ml-auto{
   margin-left: auto;
   margin-right:100px;
 }
+
+.img-wrap  {
+
+ list-style-type: none;
+ 
+}
+
+.img-wrap img  {
+  display: flex;
+  margin: auto;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  float: left;
+  width:  400px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  object-fit: cover;
+  z-index: 1;
+  list-style-type: none;
+ 
+}
+
