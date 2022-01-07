@@ -32,7 +32,15 @@ class App extends Component{
       }
 
       
-
+      getMorePhotos = () => {
+        console.log(this.state.counter)
+        this.setState({ counter: this.state.counter + 1 })
+        
+        fetch(`https://api.unsplash.com/photos/?client_id=34b1a6b2a6c2a9b3f6af5e39a76c9943bdbbaf10bd455336f70e98ca31250475&per_page=9&page=${this.state.counter}`)
+          .then(e => e.json())
+          .then(photos => this.setState({ photos: photos }))
+          
+      }
 
 
 
@@ -57,6 +65,7 @@ class App extends Component{
                 </Navbar>
                 <div className="main-content">
                 <PhotoList data={this.state.photos} />
+                <button onClick={this.getMorePhotos} className="morePhotos">More Images</button>
                 </div>
            </React.Fragment>
 
