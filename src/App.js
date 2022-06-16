@@ -1,9 +1,9 @@
-import logo from './PaletteLogo.jpg';
+import logo from './assets/PaletteLogo.jpg';
 import './App.css';
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Nav,  Navbar, NavDropdown } from 'react-bootstrap';
-import PhotoList from './Photos/PhotoList';
+import PhotoList from './components/Photos/PhotoList';
 import axios from 'axios'
 
 
@@ -64,9 +64,12 @@ class App extends Component{
                     </Navbar.Collapse>
                 </Navbar>
                 <div className="main-content">
-                <PhotoList data={this.state.photos} />
-                <button onClick={this.getMorePhotos} className="morePhotos">More Images</button>
+                <PhotoList 
+                data={this.state.photos} 
+                />
+                
                 </div>
+                <button onClick={this.getMorePhotos} className="morePhotos">More Images</button>
            </React.Fragment>
 
                 
@@ -76,7 +79,4 @@ class App extends Component{
 }
 
 export default App;
-
-
-
 

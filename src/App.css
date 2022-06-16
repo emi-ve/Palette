@@ -59,10 +59,4 @@
   display: inline-block;
   font-size: 16px;
   border-radius: 4px;
-  transition-duration: 0.4s;
-}
-
-.morePhotos:hover {
-  background-color: #4CAF50; /* Green */
-  color: white;
 }
