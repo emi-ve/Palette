@@ -2,6 +2,8 @@ import { GrFavorite } from "react-icons/gr";
 import React from "react";
 import ReactDOM from "react-dom";
 import { Container } from "react-bootstrap";
+import Favorite from "../Favorites/Favorite";
+import "./styles.css";
 
 const PhotoList = (props) => {
   const FavIcon = <GrFavorite />;
@@ -13,12 +15,17 @@ const PhotoList = (props) => {
   );
 
   const results = props.data;
-  let imgs = results.map((img) => <Img url={img.urls.small} key={img.id} />);
-
+  let imgs = results.map((img) => (
+    <div>
+      <div className="images">
+        <Img url={img.urls.small} key={img.id} />
+        <Favorite className="favs" />
+      </div>
+    </div>
+  ));
   return (
-	  
     <Container>
-      <ul className="img-list justify-content-center">{imgs}</ul>
+      <div className="img-list justify-content-center">{imgs}</div>
     </Container>
   );
 };

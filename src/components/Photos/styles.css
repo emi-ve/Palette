@@ -1,0 +1,14 @@
+.images {
+  display: flex;
+  margin: 50px;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  float: left;
+  width: 400px;
+  height: 300px;
+}
+
+.favs {
+  padding-left: 300px !important;
+}

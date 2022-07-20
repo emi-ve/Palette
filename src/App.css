@@ -1,56 +1,45 @@
-
-
 .App-logo {
-  height: 50px;;
- 
+  height: 50px;
 }
-
-
 
 .App-header {
   background-color: #ffff;
   height: 100px;
   padding: 20px white;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-
-/* Nav Bar*/ 
-.ml-auto{
+/* Nav Bar*/
+.ml-auto {
   margin-left: auto;
-  margin-right:100px;
+  margin-right: 100px;
 }
 
-.img-wrap  {
-
- list-style-type: none;
- 
- 
- 
+.img-wrap {
+  list-style-type: none;
 }
 
-.img-wrap img  {
+.img-wrap img {
   display: flex;
   margin: 50px;
   padding: 10px;
   flex-wrap: wrap;
   justify-content: center;
   float: left;
-  width:  400px;
+  width: 400px;
   height: 300px;
- 
+
   padding: 10px;
   object-fit: cover;
   z-index: 1;
   list-style-type: none;
- 
 }
 .morePhotos {
-  background-color: #4CAF50; /* Green */
+  background-color: #4caf50; /* Green */
   border: none;
   color: white;
   padding: 15px 40x;
