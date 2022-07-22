@@ -9,7 +9,7 @@ const PhotoList = (props) => {
       <img src={props.url} alt="" />
     </li>
   );
-
+  console.log("test2");
   const results = props.data;
   let imgs = results.map((img) => (
     <div key={Math.random()}>
