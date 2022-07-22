@@ -47,12 +47,12 @@ class App extends Component {
     return (
       <React.Fragment>
         <MainNav />
-        <div className="main-content">
-          <PhotoList data={this.state.photos} />
-        </div>
         <button onClick={this.getMorePhotos} className="morePhotos">
           More Images
         </button>
+        <div className="main-content">
+          <PhotoList data={this.state.photos} />
+        </div>
       </React.Fragment>
     );
   }
