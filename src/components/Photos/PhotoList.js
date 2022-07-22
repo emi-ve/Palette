@@ -18,8 +18,12 @@ const PhotoList = (props) => {
   let imgs = results.map((img) => (
     <div>
       <div className="images">
-        <Img url={img.urls.small} key={img.id} />
-        <Favorite className="favs" />
+        <div>
+          <Img url={img.urls.small} key={img.id} className="img" />
+          <div className="favs">
+            <Favorite />
+          </div>
+        </div>
       </div>
     </div>
   ));

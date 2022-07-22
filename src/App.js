@@ -47,7 +47,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <MainNav />
-        <div className="">
+        <div className="main-content">
           <PhotoList data={this.state.photos} />
         </div>
         <button onClick={this.getMorePhotos} className="morePhotos">
